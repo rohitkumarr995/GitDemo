@@ -6,7 +6,7 @@
 	<parameter name="fulldeptName" value="Mumbai(BOM)" />
 	<parameter name="arrvhalfcityName" value="singa" />
 	<parameter name="arrfullcityName" value="Singapore(SIN)" />
-	<parameter name="BlogTitle" value="HOLIDAY DESTINATIONS" />
+	<parameter name="BlogTitle" value="Travel Blog" />
 	<test name="dropDown">
 		<classes>
 			<class name="EasyMyTrip.dropDownTest" />

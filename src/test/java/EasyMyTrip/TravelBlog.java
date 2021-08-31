@@ -48,6 +48,7 @@ public class TravelBlog extends baseFlightBook{
 		TravelBlogPage trB = new TravelBlogPage(driver);
 		
 		Assert.assertEquals(trB.getBlogTitle().getText(), BlogTitle);
+		System.out.println("I have resolved travel blog heading code");
 	}
 	
 	@AfterTest
