@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="depthalfcityName" value="Mumb"/>
+  <parameter name="fulldeptName" value="Mumbai(BOM)"/>
+  <parameter name="arrvhalfcityName" value="singa"/>
+  <parameter name="arrfullcityName" value="Singapore(SIN)"/>
+  <parameter name="BlogTitle" value="HolidayTrip"/>
+  <test thread-count="5" verbose="0" name="Travel(failed)" parallel="tests">
+    <classes>
+      <class name="EasyMyTrip.TravelBlog">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="visitTravelBlog" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- EasyMyTrip.TravelBlog -->
+    </classes>
+  </test> <!-- Travel(failed) -->
+  <test thread-count="5" verbose="0" name="calender(failed)" parallel="tests">
+    <classes>
+      <class name="EasyMyTrip.calender">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="staticDropDwon1"/>
+          <include name="closeBrowser"/>
+          <include name="calendertest"/>
+          <include name="staticDropDown2"/>
+        </methods>
+      </class> <!-- EasyMyTrip.calender -->
+    </classes>
+  </test> <!-- calender(failed) -->
+</suite> <!-- Failed suite [Suite] -->

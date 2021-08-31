@@ -1,0 +1,7 @@
+Resources\baseFlightBook.class
+EasyMyTrip\App.class
+PageObject\FooterHomePage.class
+PageObject\Homepage.class
+PageObject\TravelBlogPage.class
+PageObject\WebCheck.class
+Resources\ExtentReport.class

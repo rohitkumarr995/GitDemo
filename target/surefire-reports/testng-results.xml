@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="199784" started-at="2021-08-19T17:02:42 IST" finished-at="2021-08-19T17:06:02 IST">
+    <groups>
+    </groups>
+    <test name="Travel" duration-ms="137551" started-at="2021-08-19T17:02:42 IST" finished-at="2021-08-19T17:05:00 IST">
+      <class name="EasyMyTrip.TravelBlog">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:EasyMyTrip.TravelBlog@5bfbf16f]" name="openBrowser" is-config="true" duration-ms="81543" started-at="2021-08-19T17:02:42 IST" finished-at="2021-08-19T17:04:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="visitTravelBlog(java.lang.String)[pri:0, instance:EasyMyTrip.TravelBlog@5bfbf16f]" name="visitTravelBlog" duration-ms="35177" started-at="2021-08-19T17:04:04 IST" finished-at="2021-08-19T17:04:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HOLIDAY DESTINATIONS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visitTravelBlog -->
+        <test-method status="FAIL" signature="closeBrowser()[pri:0, instance:EasyMyTrip.TravelBlog@5bfbf16f]" name="closeBrowser" is-config="true" duration-ms="20208" started-at="2021-08-19T17:04:39 IST" finished-at="2021-08-19T17:04:59 IST">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Timed out waiting for driver server to stop.
+Build info: version: '4.0.0-beta-4', revision: '29f46d02dd'
+System info: host: 'DESKTOP-95104MM', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9359338336a4e478060ba6e8ca32f7d6, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53716/devtoo..., se:cdpVersion: 92.0.4515.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9359338336a4e478060ba6e8ca32f7d6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: '4.0.0-beta-4', revision: '29f46d02dd'
+System info: host: 'DESKTOP-95104MM', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9359338336a4e478060ba6e8ca32f7d6, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53716/devtoo..., se:cdpVersion: 92.0.4515.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9359338336a4e478060ba6e8ca32f7d6
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:129)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:612)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:667)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:508)
+at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:254)
+at EasyMyTrip.TravelBlog.closeBrowser(TravelBlog.java:55)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.afterRun(TestRunner.java:877)
+at org.testng.TestRunner.run(TestRunner.java:599)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: '4.0.0-beta-4', revision: '29f46d02dd'
+System info: host: 'DESKTOP-95104MM', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: driver.version: unknown
+at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:125)
+... 25 more
+Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: '4.0.0-beta-4', revision: '29f46d02dd'
+System info: host: 'DESKTOP-95104MM', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: driver.version: unknown
+at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:174)
+at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:127)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:119)
+at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604)
+... 3 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- EasyMyTrip.TravelBlog -->
+    </test> <!-- Travel -->
+    <test name="calender" duration-ms="137999" started-at="2021-08-19T17:02:42 IST" finished-at="2021-08-19T17:05:00 IST">
+      <class name="EasyMyTrip.calender">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:EasyMyTrip.calender@687080dc]" name="openBrowser" is-config="true" duration-ms="85756" started-at="2021-08-19T17:02:42 IST" finished-at="2021-08-19T17:04:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="calendertest()[pri:0, instance:EasyMyTrip.calender@687080dc]" name="calendertest" duration-ms="31632" started-at="2021-08-19T17:04:08 IST" finished-at="2021-08-19T17:04:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calendertest -->
+        <test-method status="PASS" signature="staticDropDown2()[pri:0, instance:EasyMyTrip.calender@687080dc]" name="staticDropDown2" duration-ms="2355" started-at="2021-08-19T17:04:39 IST" finished-at="2021-08-19T17:04:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- staticDropDown2 -->
+        <test-method status="PASS" signature="staticDropDwon1()[pri:0, instance:EasyMyTrip.calender@687080dc]" name="staticDropDwon1" duration-ms="2679" started-at="2021-08-19T17:04:42 IST" finished-at="2021-08-19T17:04:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- staticDropDwon1 -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:EasyMyTrip.calender@687080dc]" name="closeBrowser" is-config="true" duration-ms="15565" started-at="2021-08-19T17:04:44 IST" finished-at="2021-08-19T17:05:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- EasyMyTrip.calender -->
+    </test> <!-- calender -->
+    <test name="webCheckIn" duration-ms="163056" started-at="2021-08-19T17:02:42 IST" finished-at="2021-08-19T17:05:25 IST">
+      <class name="EasyMyTrip.WebCheckIn">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:EasyMyTrip.WebCheckIn@45820e51]" name="openBrowser" is-config="true" duration-ms="98459" started-at="2021-08-19T17:02:42 IST" finished-at="2021-08-19T17:04:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="invokeWebCheckIn(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:EasyMyTrip.WebCheckIn@45820e51]" name="invokeWebCheckIn" duration-ms="47172" started-at="2021-08-19T17:04:20 IST" data-provider="getData" finished-at="2021-08-19T17:05:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1562546]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rohit]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Kumar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeWebCheckIn -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:EasyMyTrip.WebCheckIn@45820e51]" name="closeBrowser" is-config="true" duration-ms="17396" started-at="2021-08-19T17:05:08 IST" finished-at="2021-08-19T17:05:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- EasyMyTrip.WebCheckIn -->
+    </test> <!-- webCheckIn -->
+    <test name="dropDown" duration-ms="169461" started-at="2021-08-19T17:02:42 IST" finished-at="2021-08-19T17:05:31 IST">
+      <class name="EasyMyTrip.dropDownTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:EasyMyTrip.dropDownTest@305fd85d]" name="openBrowser" is-config="true" duration-ms="93658" started-at="2021-08-19T17:02:42 IST" finished-at="2021-08-19T17:04:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="dropDownSuggestions(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:EasyMyTrip.dropDownTest@305fd85d]" name="dropDownSuggestions" duration-ms="37039" started-at="2021-08-19T17:04:16 IST" finished-at="2021-08-19T17:04:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mumb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mumbai(BOM)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[singa]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Singapore(SIN)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDownSuggestions -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:EasyMyTrip.dropDownTest@305fd85d]" name="closeBrowser" is-config="true" duration-ms="38746" started-at="2021-08-19T17:04:53 IST" finished-at="2021-08-19T17:05:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- EasyMyTrip.dropDownTest -->
+    </test> <!-- dropDown -->
+    <test name="brokenLink" duration-ms="199783" started-at="2021-08-19T17:02:42 IST" finished-at="2021-08-19T17:06:02 IST">
+      <class name="EasyMyTrip.BrokenLink">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:EasyMyTrip.BrokenLink@58c1670b]" name="openBrowser" is-config="true" duration-ms="193266" started-at="2021-08-19T17:02:42 IST" finished-at="2021-08-19T17:05:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="getbrokenlinks()[pri:0, instance:EasyMyTrip.BrokenLink@58c1670b]" name="getbrokenlinks" duration-ms="1636" started-at="2021-08-19T17:05:55 IST" finished-at="2021-08-19T17:05:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getbrokenlinks -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:EasyMyTrip.BrokenLink@58c1670b]" name="closeBrowser" is-config="true" duration-ms="4869" started-at="2021-08-19T17:05:57 IST" finished-at="2021-08-19T17:06:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- EasyMyTrip.BrokenLink -->
+    </test> <!-- brokenLink -->
+  </suite> <!-- Suite -->
+</testng-results>
